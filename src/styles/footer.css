@@ -1,0 +1,33 @@
+footer {
+  margin: 0 auto;
+  padding: 1rem calc((100vw - 1300px) / 2);
+  text-align: center;
+  align-items: center;
+  background: var(--clr-gray);
+  font-size: 0.9rem;
+}
+
+.footer_info {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.footer_contact {
+  display: flex;
+  text-align: start;
+}
+
+.footer_contact span {
+  padding-left: 2rem;
+}
+
+.footer_logo span {
+  padding: 0 0.5rem;
+  font-size: 2rem;
+}
+
+.footer_copyright {
+  padding: 1rem;
+  font-size: 0.8rem;
+}

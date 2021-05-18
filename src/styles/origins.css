@@ -1,0 +1,32 @@
+.origins_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.origins_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* padding: 10rem 0; */
+}
+
+.origins_icon {
+  font-size: 5rem;
+  border-bottom: 1rem solid black;
+}
+
+@media screen and (max-width: 768px) {
+  .origins_container {
+    grid-template-columns: 1fr;
+  }
+  .origins_item {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 5rem;
+  }
+}

@@ -1,0 +1,16 @@
+main {
+  padding: 0.5rem calc((100vw - 1000px) / 2);
+  /* height: 80vh; */
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    padding: 0.5rem calc((100vw - 500px) / 2);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 0.5rem calc((100vw - 768px) / 2);
+  }
+}

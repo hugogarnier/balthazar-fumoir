@@ -86,4 +86,9 @@ nav {
     border-bottom: none;
     margin-bottom: 0;
   }
+
+  .logo img {
+    width: auto;
+    height: auto;
+  }
 }

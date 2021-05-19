@@ -21,7 +21,6 @@
 
 body {
   color: var(--clr-primary);
-  overflow-x: hidden;
 }
 
 ul,

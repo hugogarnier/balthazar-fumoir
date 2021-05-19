@@ -6,17 +6,15 @@
 }
 
 .hero_image img {
-  /* position: relative;
-  top: 10rem;
-  right: 7rem; */
+  flex-grow: 1;
   width: 100%;
-  max-width: 55rem;
+  max-width: 40rem;
   height: auto;
   z-index: -1;
-  margin-right: 40rem;
 }
 
 .hero_text {
+  flex-shrink: 20;
   padding-right: 3rem;
 }
 
@@ -33,6 +31,6 @@
 
   .hero_text {
     text-align: center;
-    padding: 0;
+    padding: 0 9rem;
   }
 }

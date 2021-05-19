@@ -1,5 +1,5 @@
 import { Link } from 'gatsby';
-import React, { useState } from 'react';
+import React from 'react';
 import { FaBars } from '@react-icons/all-files/fa/FaBars';
 import { FaTimes } from '@react-icons/all-files/fa/FaTimes';
 
@@ -26,23 +26,24 @@ const Navbar = ({ open, toggleBurger }) => {
     },
   ];
 
-  const [colorChange, setColorchange] = useState(false);
+  // const [colorChange, setColorchange] = useState(false);
   // Check if window is defined (so if in the browser or in node.js).
-  const isBrowser = typeof window !== 'undefined';
-  if (isBrowser) {
-    const changeNavbarColor = () => {
-      if (window.scrollY >= 80) {
-        setColorchange(true);
-      } else {
-        setColorchange(false);
-      }
-    };
-    window.addEventListener('scroll', changeNavbarColor);
-  }
+  // const isBrowser = typeof window !== 'undefined';
+  // if (isBrowser) {
+  //   const changeNavbarColor = () => {
+  //     if (window.scrollY >= 80) {
+  //       setColorchange(true);
+  //     } else {
+  //       setColorchange(false);
+  //     }
+  //   };
+  //   window.addEventListener('scroll', changeNavbarColor);
+  // }
 
   return (
     <header>
-      <nav className={colorChange ? 'nav colorChange' : 'nav'}>
+      {/* <nav className={colorChange ? 'nav colorChange' : 'nav'}> */}
+      <nav>
         <Link className='logo' to='/'>
           <img src={logo} alt='logo fumoir' />
         </Link>

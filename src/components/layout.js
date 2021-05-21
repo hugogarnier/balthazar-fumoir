@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Navbar from './Navbar/Navbar';
-import Footer from './Footer';
+import Footer from './footer';
 
 const Main = styled.main`
   padding: 0.5rem calc((100vw - 1000px) / 2);

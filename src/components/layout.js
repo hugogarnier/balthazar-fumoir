@@ -1,17 +1,26 @@
 import React from 'react';
-import { useState } from 'react';
+import styled from 'styled-components';
 
-import '../styles/layout.css';
-import Header from './header';
-import Footer from './footer';
+import Navbar from './Navbar/Navbar';
+import Footer from './Footer';
+
+const Main = styled.main`
+  padding: 0.5rem calc((100vw - 1000px) / 2);
+
+  @media screen and (max-width: 500px) {
+    padding: 0.5rem calc((100vw - 500px) / 2);
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0.5rem calc((100vw - 768px) / 2);
+  }
+`;
 
 const Layout = ({ children }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
     <>
-      <Header open={isMenuOpen} toggleBurger={setIsMenuOpen} />
-      <main>{children}</main>
+      <Navbar />
+      <Main>{children}</Main>
       <Footer />
     </>
   );

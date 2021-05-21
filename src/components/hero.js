@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 
-import '../styles/hero.css';
+import './hero.css';
 import hamburger from '../images/ham_fumoir.svg';
 
 const Hero = () => {

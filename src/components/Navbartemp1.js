@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { FaBars } from '@react-icons/all-files/fa/FaBars';
 import { FaTimes } from '@react-icons/all-files/fa/FaTimes';
 
-import '../styles/header.css';
+import './Navbar.css';
 import logo from '../images/logo_fumoir.png';
 import logoMobile from '../images/mobile_logo_fumoir.png';
 

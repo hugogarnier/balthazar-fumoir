@@ -2,7 +2,7 @@ import React from 'react';
 import { FaFacebook } from '@react-icons/all-files/fa/FaFacebook';
 import { FaTripadvisor } from '@react-icons/all-files/fa/FaTripadvisor';
 
-import '../styles/footer.css';
+import './footer.css';
 
 const Footer = () => {
   return (

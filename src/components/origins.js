@@ -3,8 +3,6 @@ import { GiCampCookingPot } from '@react-icons/all-files/gi/GiCampCookingPot';
 import { GiFrance } from '@react-icons/all-files/gi/GiFrance';
 import { RiRestaurant2Fill } from '@react-icons/all-files/ri/RiRestaurant2Fill';
 
-import '../styles/origins.css';
-
 const Origins = () => {
   return (
     <div className='origins_container'>

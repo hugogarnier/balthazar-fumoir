@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Router } from '@reach/router';
+import { useMediaQuery } from 'react-responsive';
 
 import '../styles/index.css';
 import Layout from '../components/layout';
@@ -11,8 +12,9 @@ import Contact from './contact';
 
 // markup
 const IndexPage = () => {
+  const isMobile = useMediaQuery({ query: `(max-width: 768px)` });
   return (
-    <Layout>
+    <Layout isMobile={isMobile}>
       <Router basepath='/app'>
         <Products path='/products' />
         <Restaurant path='/restaurant' />

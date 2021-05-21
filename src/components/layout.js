@@ -16,10 +16,10 @@ const Main = styled.main`
   }
 `;
 
-const Layout = ({ children }) => {
+const Layout = ({ children, isMobile }) => {
   return (
     <>
-      <Navbar />
+      <Navbar isMobile={isMobile} />
       <Main>{children}</Main>
       <Footer />
     </>

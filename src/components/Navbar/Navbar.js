@@ -1,19 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import { useMediaQuery } from 'react-responsive';
+// import { useMediaQuery } from 'react-responsive';
 
 import MobileMenu from './Mobile/MobileMenu';
 import DesktopMenu from './Desktop/DesktopMenu';
 
 const Navbar = () => {
+  const [resize, setResize] = useState(false);
+  // Check if window is defined (so if in the browser or in node.js).
   const isBrowser = typeof window !== 'undefined';
-
   if (isBrowser) {
-    const isMobile = useMediaQuery({ query: `(max-width: 768px)` });
-    return (
-      <NavContainer>{isMobile ? <MobileMenu /> : <DesktopMenu />}</NavContainer>
-    );
+    const changeMenu = () => {
+      if (window.matchMedia('(min-width: 768px)').matches) {
+        setResize(false);
+      } else {
+        setResize(true);
+      }
+    };
+    window.addEventListener('resize', changeMenu);
   }
+
+  // const isMobile = useMediaQuery({ query: `(max-width: 768px)` });
+  return (
+    <NavContainer>{resize ? <MobileMenu /> : <DesktopMenu />}</NavContainer>
+  );
+
   // const isMobile = useMediaQuery({ query: `(max-width: 768px)` });
 };
 

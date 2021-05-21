@@ -1,15 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useMediaQuery } from 'react-responsive';
+import MediaQuery from 'react-responsive';
 
 import MobileMenu from './Mobile/MobileMenu';
 import DesktopMenu from './Desktop/DesktopMenu';
 
 const Navbar = () => {
-  const isMobile = useMediaQuery({ query: `(max-width: 768px)` });
+  // const isMobile = useMediaQuery({ query: `(max-width: 768px)` });
 
   return (
-    <NavContainer>{isMobile ? <MobileMenu /> : <DesktopMenu />}</NavContainer>
+    <NavContainer>
+      <MediaQuery maxDeviceWidth={768}>
+        <MobileMenu />
+      </MediaQuery>
+      <MediaQuery minDeviceWidth={769}>
+        <DesktopMenu />
+      </MediaQuery>
+    </NavContainer>
   );
 };
 

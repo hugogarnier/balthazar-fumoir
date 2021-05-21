@@ -16,10 +16,10 @@ const Main = styled.main`
   }
 `;
 
-const Layout = ({ children, isMobile }) => {
+const Layout = ({ children, screenSize }) => {
   return (
     <>
-      <Navbar isMobile={isMobile} />
+      <Navbar screenSize={screenSize} />
       <Main>{children}</Main>
       <Footer />
     </>

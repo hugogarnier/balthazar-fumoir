@@ -8,13 +8,10 @@ import Origins from '../components/origins';
 import Restaurant from './restaurant';
 import Products from './products';
 import Contact from './contact';
-import useWindowSize from '../utils/WindowsSize';
 
 const IndexPage = () => {
-  const screenSize = useWindowSize();
-  console.log(screenSize);
   return (
-    <Layout screenSize={screenSize}>
+    <Layout>
       <Router basepath='/app'>
         <Products path='/products' />
         <Restaurant path='/restaurant' />

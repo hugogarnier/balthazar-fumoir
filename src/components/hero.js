@@ -1,53 +1,81 @@
 import React from 'react';
-import { useSpring, animated } from 'react-spring';
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-import './hero.css';
 import hamburger from '../images/ham_fumoir.svg';
 
+const HeroContainer = styled.section`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+`;
+
+const HeroText = styled.div`
+  flex-shrink: 20;
+  padding-right: 3rem;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    padding: 0 9rem;
+  }
+`;
+
+const HeroTitle = styled.h3`
+  padding-bottom: 2rem;
+  font-size: 2rem;
+`;
+
+const HeroContent = styled.p`
+  font-size: 1rem;
+`;
+
+const HeroImage = styled.img`
+  flex-grow: 1;
+  width: 100%;
+  max-width: 40rem;
+  height: auto;
+  z-index: -1;
+`;
+
 const Hero = () => {
-  const props = useSpring({
-    to: {
-      opacity: 1,
-      transform: 'translateX(0px)',
-    },
-    from: {
-      opacity: 0,
-      transform: 'translateX(-100px)',
-    },
-
-    delay: 1000,
-  });
-  const propsi = useSpring({
-    to: {
-      opacity: 1,
-      transform: 'translateY(0px)',
-    },
-    from: {
-      opacity: 0,
-      transform: 'translateY(-100px)',
-    },
-
-    delay: 1000,
-  });
-
   return (
-    <section className='hero_container'>
-      <div className='hero_text'>
-        <animated.div style={props}>
-          <h3>Le Fumoir</h3>
-          <p>
-            Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus
-            scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.
-          </p>
-        </animated.div>
-      </div>
+    <>
+      <HeroContainer>
+        <HeroText>
+          <motion.div
+            initial={{ x: -40, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ ease: 'easeOut', duration: 1 }}
+          >
+            <HeroTitle>Le Fumoir</HeroTitle>
+          </motion.div>
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ ease: 'easeOut', duration: 1, delay: 0.4 }}
+          >
+            <HeroContent>
+              Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus
+              scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.
+            </HeroContent>
+          </motion.div>
+        </HeroText>
 
-      <div className='hero_image'>
-        <animated.div style={propsi}>
-          <img src={hamburger} alt='ham fumoir' />
-        </animated.div>
-      </div>
-    </section>
+        <motion.div
+          initial={{ y: -40, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: 'easeOut', duration: 2, delay: 0.3 }}
+        >
+          <HeroImage src={hamburger} alt='ham fumoir' />
+        </motion.div>
+      </HeroContainer>
+    </>
   );
 };
 

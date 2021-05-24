@@ -3,8 +3,10 @@ import styled from 'styled-components';
 
 import MobileMenu from './Mobile/MobileMenu';
 import DesktopMenu from './Desktop/DesktopMenu';
+import useWindowSize from '../../utils/WindowsSize';
 
-const Navbar = ({ screenSize }) => {
+const Navbar = () => {
+  const screenSize = useWindowSize();
   return (
     <NavContainer>
       {screenSize.width < 768 ? <MobileMenu /> : <DesktopMenu />}

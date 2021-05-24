@@ -45,35 +45,37 @@ const HeroImage = styled.img`
 
 const Hero = () => {
   return (
-    <HeroContainer>
-      <HeroText>
-        <motion.div
-          initial={{ x: -40, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ ease: 'easeOut', duration: 1 }}
-        >
-          <HeroTitle>Le Fumoir</HeroTitle>
-        </motion.div>
-        <motion.div
-          initial={{ x: -100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ ease: 'easeOut', duration: 1, delay: 0.4 }}
-        >
-          <HeroContent>
-            Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus
-            scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.
-          </HeroContent>
-        </motion.div>
-      </HeroText>
+    <>
+      <HeroContainer>
+        <HeroText>
+          <motion.div
+            initial={{ x: -40, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ ease: 'easeOut', duration: 1 }}
+          >
+            <HeroTitle>Le Fumoir</HeroTitle>
+          </motion.div>
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ ease: 'easeOut', duration: 1, delay: 0.4 }}
+          >
+            <HeroContent>
+              Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus
+              scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.
+            </HeroContent>
+          </motion.div>
+        </HeroText>
 
-      <motion.div
-        initial={{ y: -40, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ ease: 'easeOut', duration: 2, delay: 0.3 }}
-      >
-        <HeroImage src={hamburger} alt='ham fumoir' />
-      </motion.div>
-    </HeroContainer>
+        <motion.div
+          initial={{ y: -40, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: 'easeOut', duration: 2, delay: 0.3 }}
+        >
+          <HeroImage src={hamburger} alt='ham fumoir' />
+        </motion.div>
+      </HeroContainer>
+    </>
   );
 };
 

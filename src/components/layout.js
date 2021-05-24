@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Navbar from './Navbar/Navbar';
 import Footer from './footer';
+import ScrollToTop from '../utils/ScrollTop';
 
 const Main = styled.main`
   padding: 0.5rem calc((100vw - 1000px) / 2);
@@ -22,6 +23,7 @@ const Layout = ({ children, screenSize }) => {
       <Navbar screenSize={screenSize} />
       <Main>{children}</Main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 };

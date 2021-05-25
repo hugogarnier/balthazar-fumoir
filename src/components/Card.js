@@ -54,7 +54,7 @@ const CardInner = styled(motion.div)`
 `;
 
 const CardFront = styled(motion.div)`
-  background: var(--clr-secondary);
+  background: var(--clr-white);
   width: 100%;
   height: 100%;
   padding-bottom: 32%; /* Same as width, sets height */
@@ -63,7 +63,7 @@ const CardFront = styled(motion.div)`
   position: absolute;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  color: var(--clr-white);
+  color: var(--clr-primary);
 
   > img {
     margin-left: auto;
@@ -94,7 +94,7 @@ const CardFrontContent = styled.div`
 `;
 
 const CardBack = styled(motion.div)`
-  background: var(--clr-gray);
+  background: var(--clr-white);
   width: 100%;
   height: 100%;
   padding-bottom: 32%; /* Same as width, sets height */

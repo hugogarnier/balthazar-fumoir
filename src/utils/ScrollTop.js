@@ -37,7 +37,7 @@ export default function ScrollToTop() {
 
   return (
     <ScrollContainer>
-      <IconContext.Provider value={{ color: '#303030', size: '4rem' }}>
+      <IconContext.Provider value={{ color: '#303030', size: '3rem' }}>
         {isVisible && <BiUpArrowCircle onClick={scrollToTop} />}
       </IconContext.Provider>
     </ScrollContainer>

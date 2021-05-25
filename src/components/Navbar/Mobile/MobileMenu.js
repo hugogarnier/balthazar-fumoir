@@ -48,7 +48,7 @@ const HamburgerMenuContainer = styled.div`
 const MenuContainer = styled(motion.div)`
   min-width: 18.75rem;
   width: 100vw;
-  max-width: 50%;
+  /* max-width: 50%; */
   height: 100vh;
   background-color: var(--clr-secondary);
   box-shadow: -2px 0 2px rgba(15, 15, 15, 0.3);

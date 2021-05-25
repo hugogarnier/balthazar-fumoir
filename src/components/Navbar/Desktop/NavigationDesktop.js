@@ -11,9 +11,7 @@ const Navigation = () => {
       <NavList>
         {navigation.map((val, index) => (
           <NavLink key={index}>
-            <motion.div whileHover={{ scale: 1.1 }}>
-              <NavLinkActive to={val.href}>{val.name}</NavLinkActive>
-            </motion.div>
+            <NavLinkActive to={val.href}>{val.name}</NavLinkActive>
           </NavLink>
         ))}
       </NavList>
@@ -36,6 +34,7 @@ const NavLinkActive = styled(Link)`
   color: var(--clr-primary);
   &:hover {
     color: var(--clr-secondary);
+    border-bottom: 1px solid var(--clr-secondary);
   }
 `;
 

@@ -29,11 +29,11 @@ const FooterContactSpan = styled.span`
   padding-left: 2rem;
 `;
 
-const FooterLogo = styled.div``;
-
-const FooterLogoSpan = styled.span`
-  padding: 0 0.5rem;
-  font-size: 2rem;
+const FooterLogo = styled.div`
+  > span {
+    padding: 0 0.5rem;
+    font-size: 2rem;
+  }
 `;
 
 const FooterCopyright = styled.span`
@@ -57,12 +57,12 @@ const Footer = () => {
           {/* 02 96 20 08 85 */}
         </FooterContact>
         <FooterLogo>
-          <FooterLogoSpan>
+          <span>
             <FaTripadvisor />
-          </FooterLogoSpan>
-          <FooterLogoSpan>
+          </span>
+          <span>
             <FaFacebook />
-          </FooterLogoSpan>
+          </span>
         </FooterLogo>
       </FooterInfo>
       <FooterCopyright>Copyright - 2021 Le Balthazar</FooterCopyright>

@@ -3,6 +3,8 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
+import { navigation } from '../../../data/navigation';
+
 const variants = {
   show: {
     transform: 'translateX(0em)',
@@ -70,24 +72,5 @@ const NavLinkActive = styled(Link)`
     color: #555;
   }
 `;
-
-const navigation = [
-  {
-    name: 'Accueil',
-    href: '/',
-  },
-  {
-    name: 'Nos Produits',
-    href: '/products',
-  },
-  {
-    name: 'Restaurant',
-    href: '/restaurant',
-  },
-  {
-    name: 'Contact',
-    href: '/contact',
-  },
-];
 
 export default Navigation;

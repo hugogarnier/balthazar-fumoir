@@ -26,7 +26,7 @@ const Products = () => {
 const ProductsContainer = styled.section`
   display: flex;
   flex-wrap: wrap;
-  gap: 1.2rem;
+  gap: 3rem;
   justify-content: space-between;
   margin: 3rem 0;
 

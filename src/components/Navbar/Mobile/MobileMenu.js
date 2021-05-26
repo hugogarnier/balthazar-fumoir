@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 import { MenuToggle } from './MenuToggle';
 import Navigation from './Navigation';
-import logo from '../../../images/mobile_logo_fumoir.png';
+import logo from '../../../images/mobile_logo_fumoir.svg';
 
 const menuTransition = {
   type: 'spring',

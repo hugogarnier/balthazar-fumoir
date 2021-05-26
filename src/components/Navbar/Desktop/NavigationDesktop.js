@@ -28,6 +28,10 @@ const NavList = styled.ul`
 const NavLink = styled(motion.li)`
   padding: 0 1rem;
   font-size: 1.2rem;
+
+  @media screen and (max-width: 910px) {
+    font-size: 1rem;
+  }
 `;
 
 const NavLinkActive = styled(Link)`

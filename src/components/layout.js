@@ -6,14 +6,18 @@ import Footer from './footer';
 import ScrollToTop from '../utils/ScrollTop';
 
 const Main = styled.main`
-  padding: 0.5rem calc((100vw - 1000px) / 2);
+  padding: 1rem calc((100vw - 1000px) / 2);
 
   @media screen and (max-width: 500px) {
-    padding: 0.5rem calc((100vw - 500px) / 2);
+    padding: 1rem calc((100vw - 500px) / 2);
   }
 
   @media screen and (max-width: 768px) {
-    padding: 0.5rem calc((100vw - 768px) / 2);
+    padding: 1rem calc((100vw - 768px) / 2);
+  }
+
+  @media screen and (max-width: 1010px) {
+    padding: 1rem 3rem;
   }
 `;
 

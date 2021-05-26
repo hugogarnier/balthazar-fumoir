@@ -30,9 +30,13 @@ const FooterContactSpan = styled.span`
 `;
 
 const FooterLogo = styled.div`
-  > span {
+  > a {
     padding: 0 0.5rem;
     font-size: 2rem;
+  }
+
+  > a:hover {
+    color: var(--clr-white);
   }
 `;
 
@@ -47,22 +51,28 @@ const Footer = () => {
       <FooterInfo>
         <FooterContact>
           <FooterContactContent>
-            {/* 26 Rue des Huit Patriotes <br /> 22500, Paimpol <br /> France */}
-            adresse etc
+            26 Rue des Huit Patriotes <br /> 22500, Paimpol <br /> France
           </FooterContactContent>
           <FooterContactSpan>
-            0675849375
+            02 96 20 08 85
             <br /> email
           </FooterContactSpan>
-          {/* 02 96 20 08 85 */}
         </FooterContact>
         <FooterLogo>
-          <span>
+          <a
+            href='https://www.tripadvisor.fr/Restaurant_Review-g488278-d2295578-Reviews-Le_Balthazar-Paimpol_Cotes_d_Armor_Brittany.html'
+            target='_blank'
+            rel='noreferrer'
+          >
             <FaTripadvisor />
-          </span>
-          <span>
+          </a>
+          <a
+            href='https://www.facebook.com/Le-Balthazar-102870556902980/'
+            target='_blank'
+            rel='noreferrer'
+          >
             <FaFacebook />
-          </span>
+          </a>
         </FooterLogo>
       </FooterInfo>
       <FooterCopyright>Copyright - 2021 Le Balthazar</FooterCopyright>

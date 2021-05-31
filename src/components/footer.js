@@ -27,6 +27,10 @@ const FooterContactContent = styled.div``;
 
 const FooterContactSpan = styled.span`
   padding-left: 2rem;
+
+  > a:hover {
+    color: var(--clr-white);
+  }
 `;
 
 const FooterLogo = styled.div`
@@ -54,8 +58,8 @@ const Footer = () => {
             26 Rue des Huit Patriotes <br /> 22500, Paimpol <br /> France
           </FooterContactContent>
           <FooterContactSpan>
-            02 96 20 08 85
-            <br /> email
+            <a href='tel:+0296200885'>02 96 20 08 85</a>
+            <br /> <a href='mailto:someone@example.com'>EMAIL</a>
           </FooterContactSpan>
         </FooterContact>
         <FooterLogo>

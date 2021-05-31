@@ -11,8 +11,4 @@ export const navigation = [
     name: 'Restaurant',
     href: '/restaurant',
   },
-  {
-    name: 'Contact',
-    href: '/contact',
-  },
 ];

@@ -64,6 +64,7 @@ const CardFront = styled(motion.div)`
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   color: var(--clr-primary);
+  box-shadow: 5px 10px 8px var(--clr-gray);
 
   > img {
     margin-left: auto;
@@ -105,6 +106,7 @@ const CardBack = styled(motion.div)`
   position: absolute;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  box-shadow: 0.3rem 0.5rem 0.375rem var(--clr-gray);
 
   > p {
     padding: 2rem 2rem;

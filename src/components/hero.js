@@ -61,16 +61,16 @@ const HeroTextRestaurant = styled.div`
   }
 `;
 
-const HeroTitle = styled.h3`
+const HeroTitle = styled(motion.h3)`
   padding-bottom: 2rem;
   font-size: 2rem;
 `;
 
-const HeroContent = styled.p`
+const HeroContent = styled(motion.p)`
   font-size: 1rem;
 `;
 
-const HeroImage = styled.img`
+const HeroImage = styled(motion.img)`
   width: 25rem;
   height: auto;
   z-index: 2;
@@ -81,60 +81,59 @@ const Hero = () => {
     <HeroContainer>
       <HeroFumoirContainer>
         <HeroTextFumoir>
-          <motion.div
+          <HeroTitle
             initial={{ x: -40, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ ease: 'easeOut', duration: 1 }}
           >
-            <HeroTitle>Le Fumoir</HeroTitle>
-          </motion.div>
-          <motion.div
+            Le Fumoir
+          </HeroTitle>
+
+          <HeroContent
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ ease: 'easeOut', duration: 1, delay: 0.4 }}
           >
-            <HeroContent>
-              Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus
-              scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.
-            </HeroContent>
-          </motion.div>
+            Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus
+            scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.
+          </HeroContent>
         </HeroTextFumoir>
 
-        <motion.div
+        <HeroImage
           initial={{ y: -40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ ease: 'easeOut', duration: 2, delay: 0.3 }}
-        >
-          <HeroImage src={shop} alt='ham fumoir' />
-        </motion.div>
+          src={shop}
+          alt='ham fumoir'
+        />
       </HeroFumoirContainer>
 
       <HeroRestaurantContainer>
-        <motion.div
+        <HeroImage
           initial={{ y: -40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ ease: 'easeOut', duration: 2, delay: 1.3 }}
-        >
-          <HeroImage src={chef} alt='ham fumoir' />
-        </motion.div>
+          src={chef}
+          alt='ham fumoir'
+        />
+
         <HeroTextRestaurant>
-          <motion.div
+          <HeroTitle
             initial={{ x: -40, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ ease: 'easeOut', duration: 1, delay: 1.3 }}
           >
-            <HeroTitle>Le Restaurant</HeroTitle>
-          </motion.div>
-          <motion.div
+            Le Restaurant
+          </HeroTitle>
+
+          <HeroContent
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ ease: 'easeOut', duration: 1, delay: 1.4 }}
           >
-            <HeroContent>
-              Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus
-              scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.
-            </HeroContent>
-          </motion.div>
+            Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus
+            scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.
+          </HeroContent>
         </HeroTextRestaurant>
       </HeroRestaurantContainer>
     </HeroContainer>

@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 
 import Layout from '../components/layout';
 import chef from '../images/chef_fumoir.svg';
+import carte from '../images/carte.pdf';
 
 const Restaurant = () => {
   const handleClick = (event) => {
@@ -42,15 +44,22 @@ const Restaurant = () => {
                 Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus
                 scelerra risus, sagittis. Venenatis ridiculus Pella nulla. S
               </p>
-              <a href='#menu' onClick={handleClick}>
+              <ButtonMenuMax href='#menu' onClick={handleClick}>
                 Voir le menu
-              </a>
+              </ButtonMenuMax>
+              <ButtonMenuMin href='#menu' onClick={handleClick}>
+                Voir le menu
+              </ButtonMenuMin>
             </RestaurantText>
           </RestaurantContent>
         </ContentContainer>
       </RestaurantContainer>
 
-      <MenuContainer id='menu'>Menu titre</MenuContainer>
+      <MenuContainer id='menu'>
+        <MenuDocument file={carte}>
+          <Page pageNumber={1} height={800} width={1000} />
+        </MenuDocument>
+      </MenuContainer>
     </Layout>
   );
 };
@@ -118,6 +127,36 @@ const RestaurantText = styled(motion.div)`
   }
 `;
 
+const ButtonMenuMax = styled.a`
+  padding: 1rem 2rem;
+  background: var(--clr-secondary);
+  color: var(--clr-white);
+  transition: background 0.3s ease-in-out;
+
+  &:hover {
+    background: var(--clr-primary);
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const ButtonMenuMin = styled.a`
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+    padding: 0.5rem 1rem;
+    background: var(--clr-secondary);
+    color: var(--clr-white);
+    transition: background 0.3s ease-in-out;
+
+    &:hover {
+      background: var(--clr-primary);
+    }
+  }
+`;
+
 const RestaurantImage = styled(motion.img)`
   /* flex: 0 1 auto; */
   width: 35vw;
@@ -126,6 +165,16 @@ const RestaurantImage = styled(motion.img)`
 
 const MenuContainer = styled(motion.div)`
   height: 80vh;
+
+  @media screen and (max-width: 980px) {
+    height: 10vh;
+  }
+`;
+
+const MenuDocument = styled(Document)`
+  @media screen and (max-width: 980px) {
+    display: none;
+  }
 `;
 
 export default Restaurant;

@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 
 import Layout from '../components/layout';
 import chef from '../images/chef_fumoir.svg';
-import carte from '../images/carte.pdf';
+import carte from '../images/carte.webp';
 
 const Restaurant = () => {
   const handleClick = (event) => {
@@ -56,9 +55,7 @@ const Restaurant = () => {
       </RestaurantContainer>
 
       <MenuContainer id='menu'>
-        <MenuDocument file={carte}>
-          <Page pageNumber={1} height={800} width={1000} />
-        </MenuDocument>
+        <Test src={carte} alt='menu restaurant' />
       </MenuContainer>
     </Layout>
   );
@@ -165,16 +162,11 @@ const RestaurantImage = styled(motion.img)`
 
 const MenuContainer = styled(motion.div)`
   height: 80vh;
-
-  @media screen and (max-width: 980px) {
-    height: 10vh;
-  }
 `;
 
-const MenuDocument = styled(Document)`
-  @media screen and (max-width: 980px) {
-    display: none;
-  }
+const Test = styled.img`
+  height: auto;
+  width: 100%;
 `;
 
 export default Restaurant;

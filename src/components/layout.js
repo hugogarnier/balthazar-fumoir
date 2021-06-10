@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Navbar from './Navbar/Navbar';
-import Footer from './Footer';
+import Footer from './footer';
 import ScrollToTop from '../utils/ScrollTop';
 
 const Main = styled.main`

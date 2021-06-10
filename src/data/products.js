@@ -32,13 +32,13 @@ export const products = [
   {
     title: 'Accueil',
     price: '10€',
-    image: require('../images/products/saumon.jpg').default,
+    image: require('../images/products/ddd.jpg').default,
     description: 'bla bla',
   },
   {
     title: 'Accueil',
     price: '10€',
-    image: require('../images/products/saumonfume.jpg').default,
+    image: require('../images/products/eee.jpg').default,
     description: 'bla bla',
   },
   {

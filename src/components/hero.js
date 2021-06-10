@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-import shop from '../images/fumoir.jpg';
-import chef from '../images/ext.jpg';
+import shop from '../images/fum.jpg';
+import chef from '../images/exter.jpg';
 
 const HeroContainer = styled.section`
   display: flex;

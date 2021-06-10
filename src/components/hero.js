@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-import shop from '../images/shop_fumoir.svg';
-import chef from '../images/chef_fumoir.svg';
+import shop from '../images/fumoir.jpg';
+import chef from '../images/ext.jpg';
 
 const HeroContainer = styled.section`
   display: flex;
@@ -74,6 +74,7 @@ const HeroImage = styled(motion.img)`
   width: 25rem;
   height: auto;
   z-index: 2;
+  border-radius: 1rem;
 `;
 
 const Hero = () => {

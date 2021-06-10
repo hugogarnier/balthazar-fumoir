@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Card from '../components/Card';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import { products } from '../data/products';
 
 const Products = () => {

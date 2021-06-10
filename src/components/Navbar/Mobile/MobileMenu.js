@@ -46,19 +46,20 @@ const HamburgerMenuContainer = styled.div`
 `;
 
 const MenuContainer = styled(motion.div)`
-  min-width: 18.75rem;
-  width: 100vw;
+  /* min-width: 18.75rem; */
+  width: 100%;
   /* max-width: 50%; */
-  height: 100vh;
+  height: 100%;
   background-color: var(--clr-secondary);
   box-shadow: -2px 0 2px rgba(15, 15, 15, 0.3);
   z-index: 90;
   position: fixed;
   top: 0;
   right: 0;
-  transform: translateX(4em);
+  /* transform: translateX(4em); */
   user-select: none;
   padding: 1em 2.5em;
+  overflow: hidden;
 `;
 
 const Logo = styled.img`
@@ -68,10 +69,10 @@ const Logo = styled.img`
 
 const menuVariants = {
   open: {
-    transform: 'translateX(3%)',
+    transform: 'translateX(0%)',
   },
   closed: {
-    transform: 'translateX(103%)',
+    transform: 'translateX(100%)',
   },
 };
 

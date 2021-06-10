@@ -2,9 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import chef from '../images/chef_fumoir.svg';
-import carte from '../images/carte.webp';
+import carte from '../images/carte.pdf';
+import MenuWithCard from '../components/Menu/MenuWithCard';
 
 const Restaurant = () => {
   const handleClick = (event) => {
@@ -43,19 +44,19 @@ const Restaurant = () => {
                 Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus
                 scelerra risus, sagittis. Venenatis ridiculus Pella nulla. S
               </p>
-              <ButtonMenuMax href='#menu' onClick={handleClick}>
+              <ButtonMenu href='#menu' onClick={handleClick}>
                 Voir le menu
-              </ButtonMenuMax>
-              <ButtonMenuMin href='#menu' onClick={handleClick}>
-                Voir le menu
-              </ButtonMenuMin>
+              </ButtonMenu>
             </RestaurantText>
           </RestaurantContent>
         </ContentContainer>
       </RestaurantContainer>
 
-      <MenuContainer id='menu'>
-        <Test src={carte} alt='menu restaurant' />
+      <MenuContainer>
+        <ButtonMenu href={carte} download id='menu'>
+          Télécharger le menu
+        </ButtonMenu>
+        <MenuWithCard />
       </MenuContainer>
     </Layout>
   );
@@ -124,49 +125,41 @@ const RestaurantText = styled(motion.div)`
   }
 `;
 
-const ButtonMenuMax = styled.a`
+const ButtonMenu = styled.a`
   padding: 1rem 2rem;
+  border-radius: 1rem;
   background: var(--clr-secondary);
   color: var(--clr-white);
   transition: background 0.3s ease-in-out;
+  text-align: center;
 
   &:hover {
     background: var(--clr-primary);
   }
 
   @media screen and (max-width: 768px) {
-    display: none;
-  }
-`;
-
-const ButtonMenuMin = styled.a`
-  display: none;
-  @media screen and (max-width: 768px) {
-    display: block;
     padding: 0.5rem 1rem;
-    background: var(--clr-secondary);
-    color: var(--clr-white);
-    transition: background 0.3s ease-in-out;
-
-    &:hover {
-      background: var(--clr-primary);
-    }
   }
 `;
 
 const RestaurantImage = styled(motion.img)`
-  /* flex: 0 1 auto; */
   width: 35vw;
   height: auto;
 `;
 
-const MenuContainer = styled(motion.div)`
-  height: 80vh;
-`;
+const MenuContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
+  gap: 2rem;
+  margin: 5rem 0;
+  font-size: 0.9em;
 
-const Test = styled.img`
-  height: auto;
-  width: 100%;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    font-size: 1em;
+  }
 `;
 
 export default Restaurant;

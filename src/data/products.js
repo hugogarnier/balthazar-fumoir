@@ -2,19 +2,19 @@ export const products = [
   {
     title: 'Accueil',
     price: '10€',
-    image: require('../images/products/test.jpg').default,
+    image: require('../images/products/1.jpg').default,
     description: 'bla bla',
   },
   {
     title: 'Accudsqdsqeil',
     price: '1000€',
-    image: require('../images/products/test.jpg').default,
+    image: require('../images/products/2.jpg').default,
     description: 'bla bla',
   },
   {
     title: 'Accueilsdqdqsdsqdqsdqsd',
     price: '10€',
-    image: require('../images/products/test.jpg').default,
+    image: require('../images/products/3.jpg').default,
     description: 'bla bla',
   },
   {
@@ -32,13 +32,13 @@ export const products = [
   {
     title: 'Accueil',
     price: '10€',
-    image: require('../images/products/test.jpg').default,
+    image: require('../images/products/saumon.jpg').default,
     description: 'bla bla',
   },
   {
     title: 'Accueil',
     price: '10€',
-    image: require('../images/products/test2.jpg').default,
+    image: require('../images/products/saumonfume.jpg').default,
     description: 'bla bla',
   },
   {

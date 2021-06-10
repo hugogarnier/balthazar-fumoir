@@ -2,19 +2,19 @@ export const products = [
   {
     title: 'Accueil',
     price: '10€',
-    image: require('../images/products/1.jpg').default,
+    image: require('../images/products/aaa.jpg').default,
     description: 'bla bla',
   },
   {
     title: 'Accudsqdsqeil',
     price: '1000€',
-    image: require('../images/products/2.jpg').default,
+    image: require('../images/products/bbb.jpg').default,
     description: 'bla bla',
   },
   {
     title: 'Accueilsdqdqsdsqdqsdqsd',
     price: '10€',
-    image: require('../images/products/3.jpg').default,
+    image: require('../images/products/ccc.jpg').default,
     description: 'bla bla',
   },
   {

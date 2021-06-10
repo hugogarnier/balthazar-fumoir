@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 import chef from '../images/chef_fumoir.svg';
 import carte from '../images/carte.pdf';
 import MenuWithCard from '../components/Menu/MenuWithCard';

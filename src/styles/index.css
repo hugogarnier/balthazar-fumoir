@@ -29,3 +29,7 @@ a {
   list-style: none;
   color: var(--clr-primary);
 }
+
+.heroImage {
+  border-radius: 1rem;
+}

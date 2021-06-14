@@ -19,7 +19,7 @@ const Card = ({ title, image, price, description }) => {
           variants={variants}
           transition={{ duration: 1 }}
         >
-          <img src={image} alt={image} />
+          <img src={image} alt={title} />
           <CardFrontContent>
             <h3>{title}</h3>
             <span>{price}</span>
@@ -81,6 +81,7 @@ const CardFrontContent = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 1.5rem 2rem;
+  text-align: center;
 
   > h3 {
     font-size: 1rem;

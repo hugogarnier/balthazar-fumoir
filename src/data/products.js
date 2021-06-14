@@ -9,7 +9,7 @@ export const products = [
   {
     title: 'Pavé de Truite de mer fumé aux algues',
     price: '1000€',
-    image: require('../images/products/pavetruite.jpg').default,
+    image: require('../images/products/pavetruitealgue.jpg').default,
     description:
       'Truite de mer salée au sel de Guérande marinée aux algues et fumée au bois de hêtre',
   },

@@ -76,7 +76,7 @@ const HeroContent = styled(motion.div)`
   }
 
   > ul {
-    padding: 1rem;
+    padding: 0.5rem;
     list-style: inside;
 
     @media screen and (max-width: 768px) {
@@ -125,7 +125,7 @@ const Hero = () => {
               <li>Saumon fumé</li>
               <li>Pavé de truite de mer aux algues</li>
               <li>Filet de porc fumé et séché</li>
-              <li>Magret de canard fumé</li>
+              {/* <li>Magret de canard fumé</li> */}
               <li>Une gamme de bocaux maison</li>
               <li>Des terrines de la mer ou de la terre</li>
               <li>Un choix de caramel au beurre salé réalisé sur place</li>

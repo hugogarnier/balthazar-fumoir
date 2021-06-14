@@ -49,27 +49,21 @@ const Origins = () => {
           <GiCampCookingPot />
         </OriginsIcon>
 
-        <OriginsContent>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </OriginsContent>
+        <OriginsContent>Produits fumés au bois de hêtre</OriginsContent>
       </OriginsItems>
       <OriginsItems>
         <OriginsIcon>
           <GiFrance />
         </OriginsIcon>
 
-        <OriginsContent>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </OriginsContent>
+        <OriginsContent>Produits français</OriginsContent>
       </OriginsItems>
       <OriginsItems>
         <OriginsIcon>
           <RiRestaurant2Fill />
         </OriginsIcon>
 
-        <OriginsContent>
-          Lorem ipsum dolor sit amet consectetur adipisicing.
-        </OriginsContent>
+        <OriginsContent>Service en continu</OriginsContent>
       </OriginsItems>
     </OriginsContainer>
   );

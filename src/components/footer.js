@@ -15,7 +15,11 @@ const FooterContainer = styled.footer`
 const FooterInfo = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 0;
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
 `;
 
 const FooterContact = styled.div`

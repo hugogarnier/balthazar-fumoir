@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Navbar from './Navbar/Navbar';
+import Navbar from './Navbar';
 import Footer from './footer';
 import ScrollToTop from '../utils/ScrollTop';
 import Seo from './seo';
@@ -22,11 +22,12 @@ const Main = styled.main`
   }
 `;
 
-const Layout = ({ children, screenSize }) => {
+const Layout = ({ children }) => {
   return (
     <>
       <Seo />
-      <Navbar screenSize={screenSize} />
+
+      <Navbar />
       <Main>{children}</Main>
       <Footer />
       <ScrollToTop />

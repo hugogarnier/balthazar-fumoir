@@ -105,7 +105,7 @@ const RestaurantContent = styled.div`
   padding-left: 3rem;
   @media screen and (max-width: 768px) {
     text-align: center;
-    padding: 2rem 9rem;
+    padding: 2rem 3rem;
     font-size: 3rem;
   }
 `;
@@ -114,6 +114,10 @@ const RestaurantTitle = styled(motion.h3)`
   padding-bottom: 2rem;
   font-size: 2rem;
   z-index: 100;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const RestaurantText = styled(motion.div)`
@@ -151,6 +155,7 @@ const RestaurantText = styled(motion.div)`
     font-size: 0.9rem;
 
     @media screen and (max-width: 768px) {
+      padding-left: 0;
       padding-bottom: 0.5rem;
     }
   }

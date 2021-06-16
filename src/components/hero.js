@@ -190,6 +190,7 @@ const HeroContent = styled(motion.div)`
     font-size: 0.9rem;
 
     @media screen and (max-width: 768px) {
+      padding-left: 0;
       padding-bottom: 0.5rem;
     }
   }

@@ -26,7 +26,6 @@ const Layout = ({ children }) => {
   return (
     <>
       <Seo />
-
       <Navbar />
       <Main>{children}</Main>
       <Footer />

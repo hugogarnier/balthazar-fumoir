@@ -6,22 +6,25 @@
         "id": 1,
         "title": "2 Tranches de saumon fumé",
         "price": "5,50€",
-        "image": "../images/products/saumon2.jpg",
-        "description": "Saumon écossais label rouge salé au sel de Guérande et fumé au bois de hêtre"
+        "image": "../images/products/saumon1.jpg",
+        "description": "Saumon écossais label rouge salé au sel de Guérande et fumé au bois de hêtre",
+        "type": "boisson"
       },
       {
         "id": 2,
         "title": "Pavé de Truite de mer fumé aux algues",
         "price": "6,20€",
-        "image": "../images/products/pavetruitealgue.jpg",
-        "description": "Truite de mer salée au sel de Guérande marinée aux algues et fumée au bois de hêtre"
+        "image": "../images/products/truite_algue.jpg",
+        "description": "Truite de mer salée au sel de Guérande marinée aux algues et fumée au bois de hêtre",
+        "type": "bocal"
       },
       {
         "id": 3,
         "title": "Pavé de Truite de mer fumé au curry vert",
         "price": "6,20€",
-        "image": "../images/products/pavetruite.jpg",
-        "description": "Truite de mer salée au sel de Guérande assaisonnée au curry vert et fumée au bois de hêtre"
+        "image": "../images/products/truite_curry.jpg",
+        "description": "Truite de mer salée au sel de Guérande assaisonnée au curry vert et fumée au bois de hêtre",
+        "type": "bocal"
       },
       {
         "id": 4,
@@ -82,7 +85,7 @@
       {
         "id": 12,
         "title": "Caramel au beurre salé",
-        "price": "5,50€",
+        "price": "5€",
         "image": "../images/products/caramel.jpg",
         "description": ""
       },

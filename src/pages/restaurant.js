@@ -58,7 +58,7 @@ const Restaurant = () => {
               <p>
                 En accompagnement de vos plats, en plus de cidre et de bières
                 bretonne, vous trouverez une sélection de vin de nos régions
-                servie au verre ou à la carafe. xxx
+                servie au verre ou à la carafe.
               </p>
               <ButtonMenu href='#menu' onClick={handleClick}>
                 Voir le menu

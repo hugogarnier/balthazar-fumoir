@@ -7,7 +7,6 @@ import Hero from '../components/hero';
 import Origins from '../components/origins';
 import Restaurant from './restaurant';
 import Products from './products';
-import Contact from './contact';
 
 const IndexPage = () => {
   return (
@@ -15,7 +14,6 @@ const IndexPage = () => {
       <Router basepath='/app'>
         <Products path='/products' />
         <Restaurant path='/restaurant' />
-        <Contact path='/contact' />
       </Router>
       <Hero />
       <Origins />

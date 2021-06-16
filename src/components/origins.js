@@ -37,7 +37,7 @@ const OriginsContent = styled.div`
   font-size: 1rem;
 
   @media screen and (max-width: 768px) {
-    padding: 1rem 10rem;
+    padding: 1rem 3rem;
   }
 `;
 

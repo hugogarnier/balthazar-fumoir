@@ -1,21 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
+import { graphql } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
 
 import Card from '../components/Card';
 import Layout from '../components/layout';
-import { products } from '../data/products';
 
-const Products = () => {
+const Products = ({ data }) => {
+  const info = data.allDataJson.edges[0].node;
+  const { products } = info;
+
   return (
     <Layout>
       <ProductsContainer>
-        {products.map((val, index) => (
+        {products.items.map((item) => (
           <Card
-            key={index}
-            title={val.title}
-            image={val.image}
-            price={val.price}
-            description={val.description}
+            key={item.id}
+            title={item.title}
+            image={getImage(item.image)}
+            price={item.price}
+            description={item.description}
           />
         ))}
       </ProductsContainer>
@@ -23,16 +27,37 @@ const Products = () => {
   );
 };
 
+// Query file AllProducts.json
+export const query = graphql`
+  {
+    allDataJson {
+      edges {
+        node {
+          products {
+            name
+            items {
+              description
+              price
+              title
+              image {
+                childImageSharp {
+                  gatsbyImageData(placeholder: BLURRED)
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+
 const ProductsContainer = styled.section`
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
   justify-content: space-between;
   margin: 3rem 0;
-
-  > h3 {
-    font-size: 3rem;
-  }
 
   @media screen and (max-width: 768px) {
     flex-direction: column;

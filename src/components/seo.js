@@ -3,6 +3,9 @@ import { Helmet } from 'react-helmet';
 import { useLocation } from '@reach/router';
 import { useStaticQuery, graphql } from 'gatsby';
 
+import favicon32 from '../images/favicon-32x32.png';
+// import favicon16 from '../images/favicon-16x16.png';
+
 const Seo = ({ title, description, image, article }) => {
   const { pathname } = useLocation();
   const { site } = useStaticQuery(query);
@@ -23,6 +26,7 @@ const Seo = ({ title, description, image, article }) => {
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
       <meta name='description' content={seo.description} />
       <meta name='image' content={seo.image} />
+      <meta name='icon' href={favicon32} />
       {seo.url && <meta property='og:url' content={seo.url} />}
       {(article ? true : null) && <meta property='og:type' content='article' />}
       {seo.title && <meta property='og:title' content={seo.title} />}

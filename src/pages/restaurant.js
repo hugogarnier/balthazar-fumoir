@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 import Layout from '../components/layout';
 import chef from '../images/chef_fumoir.svg';
 import carte from '../images/carte.pdf';
-import MenuWithCard from '../components/Menu/MenuWithCard';
+// import MenuWithCard from '../components/Menu/MenuWithCard';
+const MenuWithCard = React.lazy(() =>
+  import('../components/Menu/MenuWithCard')
+);
 
 const Restaurant = () => {
   const handleClick = (event) => {
@@ -68,12 +71,14 @@ const Restaurant = () => {
         </ContentContainer>
       </RestaurantContainer>
 
-      <MenuContainer>
-        <ButtonMenu href={carte} download id='menu'>
-          Télécharger le menu
-        </ButtonMenu>
-        <MenuWithCard />
-      </MenuContainer>
+      <Suspense fallback={<LazyComponent>Loading...</LazyComponent>}>
+        <MenuContainer>
+          <ButtonMenu href={carte} download id='menu'>
+            Télécharger le menu
+          </ButtonMenu>
+          <MenuWithCard />
+        </MenuContainer>
+      </Suspense>
     </Layout>
   );
 };
@@ -196,6 +201,10 @@ const MenuContainer = styled.div`
     grid-template-rows: repeat(1, 1fr);
     font-size: 1em;
   }
+`;
+
+const LazyComponent = styled.div`
+  height: 100vh;
 `;
 
 export default Restaurant;

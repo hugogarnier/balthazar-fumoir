@@ -111,7 +111,7 @@ const HeroContainer = styled.section`
   align-items: center;
   height: 90vh;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 980px) {
     height: 100%;
   }
 `;
@@ -121,7 +121,7 @@ const HeroFumoirContainer = styled.div`
   align-items: center;
   flex-direction: row;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 980px) {
     flex-direction: column-reverse;
     justify-content: space-between;
     padding: 2rem 0;
@@ -133,7 +133,7 @@ const HeroRestaurantContainer = styled.div`
   align-items: center;
   flex-direction: row;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 980px) {
     flex-direction: column;
     justify-content: space-between;
     padding: 2rem 0;
@@ -143,7 +143,7 @@ const HeroRestaurantContainer = styled.div`
 const HeroTextFumoir = styled.div`
   padding-right: 3rem;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 980px) {
     text-align: center;
     padding: 2rem 1rem;
     font-size: 3rem;
@@ -153,7 +153,7 @@ const HeroTextFumoir = styled.div`
 const HeroTextRestaurant = styled.div`
   padding-left: 3rem;
   /* text-align: right; */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 980px) {
     text-align: center;
     padding: 2rem 1rem;
     font-size: 3rem;
@@ -180,7 +180,7 @@ const HeroContent = styled(motion.div)`
     padding: 0.5rem;
     list-style: inside;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 980px) {
       list-style: none;
     }
   }
@@ -189,7 +189,7 @@ const HeroContent = styled(motion.div)`
     padding-left: 1rem;
     font-size: 0.9rem;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 980px) {
       padding-left: 0;
       padding-bottom: 0.5rem;
     }

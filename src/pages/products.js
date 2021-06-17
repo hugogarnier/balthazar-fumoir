@@ -1,10 +1,11 @@
-import React, { Suspense, useState } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
 
 import Layout from '../components/layout';
-const Card = React.lazy(() => import('../components/card'));
+import Card from '../components/card';
+// const Card = React.lazy(() => import('../components/card'));
 
 const Products = ({ data }) => {
   const [option, setOption] = useState('');
@@ -30,10 +31,21 @@ const Products = ({ data }) => {
           </SelectContainer>
         </FilterProductContainer>
 
-        <Suspense fallback={<LazyComponent>Loading...</LazyComponent>}>
-          <ProductsContainer>
-            {option === ''
-              ? products.items.map((item) => (
+        {/* <Suspense fallback={<LazyComponent>Loading...</LazyComponent>}> */}
+        <ProductsContainer>
+          {option === ''
+            ? products.items.map((item) => (
+                <Card
+                  key={item.id}
+                  title={item.title}
+                  image={getImage(item.image)}
+                  price={item.price}
+                  description={item.description}
+                />
+              ))
+            : products.items
+                .filter((obj) => obj.type === option)
+                .map((item) => (
                   <Card
                     key={item.id}
                     title={item.title}
@@ -41,20 +53,9 @@ const Products = ({ data }) => {
                     price={item.price}
                     description={item.description}
                   />
-                ))
-              : products.items
-                  .filter((obj) => obj.type === option)
-                  .map((item) => (
-                    <Card
-                      key={item.id}
-                      title={item.title}
-                      image={getImage(item.image)}
-                      price={item.price}
-                      description={item.description}
-                    />
-                  ))}
-          </ProductsContainer>
-        </Suspense>
+                ))}
+        </ProductsContainer>
+        {/* </Suspense> */}
       </ProductGroup>
     </Layout>
   );
@@ -136,8 +137,8 @@ const FilterOption = styled.option`
   background-color: var(--clr-white);
 `;
 
-const LazyComponent = styled.div`
-  height: 100vh;
-`;
+// const LazyComponent = styled.div`
+//   height: 100vh;
+// `;
 
 export default Products;

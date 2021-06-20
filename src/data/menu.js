@@ -261,7 +261,7 @@ export const cafe = [
   {
     id: 50,
     title: 'Café gourmand',
-    price: '3,40€',
+    price: '8,90€',
     description:
       'Café, déca, thé ou tisane et Far breton, mousse chocolat et dessert du moment',
   },

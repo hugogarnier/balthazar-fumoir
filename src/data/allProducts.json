@@ -107,6 +107,15 @@
         "type": "bocal"
       },
       {
+        "id": 131,
+        "title": "Bocaux plats cuisinés",
+        "price": "8,55€",
+        "image": "../images/products/bocaux_cuisines.jpg",
+        "description": "",
+        "type": "bocal"
+      },
+
+      {
         "id": 14,
         "title": "Sel à l'ail des ours",
         "price": "8,40€",

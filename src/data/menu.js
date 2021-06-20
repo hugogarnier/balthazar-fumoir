@@ -210,12 +210,17 @@ export const assiette = [
   {
     id: 41,
     title: 'Fumée de la Mer',
-    description: 'saumon fumé, truite de mer fumé, rillettes de la mer',
+    description: 'Saumon fumé, truite de mer fumé, rillettes de la mer',
   },
   {
     id: 42,
     title: 'Fumée de la Terre',
-    description: 'magret de canard fumé et filet de porc fumé',
+    description: 'Magret de canard fumé et filet de porc fumé',
+  },
+  {
+    id: 421,
+    title: 'Fruits de mer',
+    description: 'Bulots cuits, crevettes roses, huîtres',
   },
   {
     id: 43,
@@ -230,7 +235,7 @@ export const assiette = [
   {
     id: 45,
     title: 'Crevettes roses Marinées aux épices Mapuche',
-    description: 'crevettes roses, huile d’olive, estragon, épices Mapuche',
+    description: 'Crevettes roses, huile d’olive, estragon, épices Mapuche',
   },
   {
     id: 46,

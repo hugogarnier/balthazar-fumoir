@@ -300,6 +300,7 @@ export const verre = [
 ];
 
 export const divers = [
+  { id: 69, title: 'Plat du jour', price: '15,70€' },
   { id: 56, title: 'Sangria Maison 50cl à partager', price: '14,50€' },
   {
     id: 57,

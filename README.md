@@ -28,13 +28,13 @@
 <br />
 <p align="center">
   <a href="https://github.com/hugogarnier/balthazar-fumoir">
-    <img src="public/favicon.ico" alt="Logo" width="80" height="80">
+    <img src="src/images/logo_fumoir.svg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Rick&MortyApp</h3>
+  <h3 align="center">Balthazar Fumoir</h3>
 
   <p align="center">
-    Simple ReactJS app to test fetch API and Tailwind CSS. 
+    Mini restaurant website created with GatsbyJS and styled-components 
     <br />
     Live : https://lebalthazar.fr 
     <br />
@@ -79,7 +79,7 @@
 
 ## About The Project
 
-[![rick morty_home](https://user-images.githubusercontent.com/80961204/116677251-4b6d8280-a9a8-11eb-9ddf-480d60e89bb7.png)](https://optimistic-einstein-1fed33.netlify.app/)
+[![homescreen](https://user-images.githubusercontent.com/80961204/123946667-c26ec980-d99f-11eb-96aa-8fc3b1f68be6.jpg)](https://lebalthazar.fr)
 
 <!-- Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**

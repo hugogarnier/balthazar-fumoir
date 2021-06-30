@@ -1,54 +1,176 @@
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Thanks again! Now go create something AMAZING! :D
+***
+***
+***
+*** To avoid retyping too much info. Do a search and replace for the following:
+*** hugogarnier, rickmorty, twitter_handle, email, project_title, project_description
+-->
+
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+
+<!-- MARKDOWN LINKS & IMAGES PARAM TO CHANGE -->
+
+[twitter]: https://twitter.com/garnier_hugo
+[email]: h.garnier@outlook.com
+
+<!-- PROJECT LOGO -->
+<br />
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="https://github.com/hugogarnier/balthazar-fumoir">
+    <img src="src/images/logo_fumoir.svg" alt="Logo" width="80" height="80">
   </a>
+
+  <h3 align="center">Balthazar Fumoir</h3>
+
+  <p align="center">
+    Mini restaurant website created with GatsbyJS and styled-components 
+    <br />
+    Live : https://lebalthazar.fr 
+    <br />
+    <a href="https://github.com/hugogarnier/balthazar-fumoir"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://lebalthazar.fr">View Demo</a>
+    ·
+    <a href="https://github.com/hugogarnier/balthazar-fumoir/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/hugogarnier/balthazar-fumoir/issues">Request Feature</a>
+  </p>
 </p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
 
-## 🚀 Quick start
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
 
-1.  **Create a Gatsby site.**
+<!-- ABOUT THE PROJECT -->
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## About The Project
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+[![homescreen](https://user-images.githubusercontent.com/80961204/123946667-c26ec980-d99f-11eb-96aa-8fc3b1f68be6.jpg)](https://lebalthazar.fr)
 
-2.  **Start developing.**
+<!-- Here's a blank template to get started:
+**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
+`hugogarnier`, `rickmorty`, `twitter_handle`, `email`, `project_title`, `project_description` -->
 
-    Navigate into your new site’s directory and start it up.
+### Built With
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+- [GatsbyJS](https://www.gatsbyjs.com/)
+- [styled-components](https://styled-components.com/)
 
-3.  **Open the code and start customizing!**
+<!-- GETTING STARTED -->
 
-    Your site is now running at http://localhost:8000!
+## Getting Started
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+To get a local copy up and running follow these simple steps.
 
-4.  **Learn more**
+### Prerequisites
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+This is an example of how to list things you need to use the software and how to install them.
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+### Installation
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+1. Clone the repo
+   ```sh
+   git clone https://github.com/hugogarnier/balthazar-fumoir.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+<!-- USAGE EXAMPLES -->
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## Usage
 
-## 🚀 Quick start (Gatsby Cloud)
+Simply search a name or a status
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+<!-- ROADMAP -->
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+## Roadmap
+
+See the [open issues](https://github.com/hugogarnier/balthazar-fumoir/issues) for a list of proposed features (and known issues).
+
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- CONTACT -->
+
+## Contact
+
+Hugo Garnier - [Twitter][twitter] - Email: h.garnier@outlook.com
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+Project Link: [Balthazar Fumoir](https://github.com/hugogarnier/balthazar-fumoir)
+
+<!-- ACKNOWLEDGEMENTS -->
+<!-- ## Acknowledgements
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Img Shields](https://shields.io)
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Pages](https://pages.github.com)
+* [Animate.css](https://daneden.github.io/animate.css)
+* [Loaders.css](https://connoratherton.com/loaders)
+* [Slick Carousel](https://kenwheeler.github.io/slick)
+* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
+* [Sticky Kit](http://leafo.net/sticky-kit)
+* [JVectorMap](http://jvectormap.com)
+* [Font Awesome](https://fontawesome.com) -->
+
+<!-- MARKDOWN LINKS & IMAGES PARAM TO CHANGE -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/hugogarnier

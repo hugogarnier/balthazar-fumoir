@@ -1,79 +1,29 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 const Card = ({ title, image, price, description }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const variants = {
-    rotate: { rotateY: 0 },
-    rotateNeg: { rotateY: -180 },
-    rotatePos: { rotateY: 180 },
-  };
-
   return (
     <CardContainer whileHover={{ scale: 1.05 }}>
-      <CardInner onClick={() => setIsOpen((isOpen) => !isOpen)}>
-        <CardFront
-          initial={{ rotateY: 0 }}
-          animate={isOpen ? 'rotateNeg' : 'rotate'}
-          variants={variants}
-          transition={{ duration: 1 }}
-        >
-          <img src={image} alt={image} />
-          <CardFrontContent>
-            <h3>{title}</h3>
-            <span>{price}</span>
-          </CardFrontContent>
-        </CardFront>
-        <CardBack
-          initial={{ rotateY: 180 }}
-          animate={isOpen ? 'rotate' : 'rotatePos'}
-          variants={variants}
-          transition={{ duration: 1 }}
-        >
-          <p>{description}</p>
-        </CardBack>
-      </CardInner>
+      <GatsbyImage image={image} alt={title} className='card-image' />
+      <CardFrontContent>
+        <CardTitle>{title}</CardTitle>
+        <CardDescription>{description}</CardDescription>
+        <CardPrice>{price}</CardPrice>
+      </CardFrontContent>
     </CardContainer>
   );
 };
 
 const CardContainer = styled(motion.div)`
-  background-color: transparent;
-  width: 25%;
-  min-width: 13rem;
-  min-height: 20rem;
-  padding-bottom: 35%; /* Same as width, sets height */
-  position: relative;
-`;
-
-const CardInner = styled(motion.div)`
-  height: 100%;
-  width: 100%;
-  cursor: pointer;
-`;
-
-const CardFront = styled(motion.div)`
   display: flex;
   flex-direction: column;
+  width: 30%;
+  min-width: 16rem;
   background: var(--clr-white);
-  width: 100%;
-  height: 100%;
   border-radius: 1.563rem;
-  position: absolute;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
   color: var(--clr-primary);
-  box-shadow: 5px 10px 8px var(--clr-gray);
-
-  > img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 50%;
-    border-top-left-radius: 1.563rem;
-    border-top-right-radius: 1.563rem;
-  }
 `;
 
 const CardFrontContent = styled.div`
@@ -81,37 +31,29 @@ const CardFrontContent = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 1.5rem 2rem;
+  text-align: center;
+`;
 
-  > h3 {
-    font-size: 1rem;
-    padding-bottom: 2rem;
-  }
-
-  > span {
-    font-size: 1.5rem;
-  }
+const CardTitle = styled.h3`
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
 
   @media screen and (max-width: 768px) {
-    > h3 {
-      word-break: break-all;
-    }
+    font-size: 1rem;
   }
 `;
 
-const CardBack = styled(motion.div)`
-  background: var(--clr-white);
-  width: 100%;
-  height: 100%;
-  border-radius: 1.563rem;
-  position: absolute;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-  box-shadow: 0.3rem 0.5rem 0.375rem var(--clr-gray);
+const CardDescription = styled.span`
+  font-size: 1rem;
+  padding-bottom: 1rem;
 
-  > p {
-    padding: 2rem 2rem;
-    font-size: 1.2rem;
+  @media screen and (max-width: 768px) {
+    font-size: 0.9rem;
   }
+`;
+
+const CardPrice = styled.span`
+  font-size: 1.5rem;
 `;
 
 export default Card;

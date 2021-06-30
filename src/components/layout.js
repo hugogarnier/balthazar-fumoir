@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Navbar from './Navbar/Navbar';
+import Navbar from './navbar';
 import Footer from './footer';
 import ScrollToTop from '../utils/ScrollTop';
+import Seo from './seo';
 
 const Main = styled.main`
   padding: 1rem calc((100vw - 1000px) / 2);
@@ -21,10 +22,11 @@ const Main = styled.main`
   }
 `;
 
-const Layout = ({ children, screenSize }) => {
+const Layout = ({ children }) => {
   return (
     <>
-      <Navbar screenSize={screenSize} />
+      <Seo />
+      <Navbar />
       <Main>{children}</Main>
       <Footer />
       <ScrollToTop />

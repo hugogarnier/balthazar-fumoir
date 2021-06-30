@@ -5,10 +5,10 @@ const CardMenuTextPrice = ({ items, fallback }) => {
   if (!items || items.length === 0) {
     return fallback;
   } else {
-    return items.map((item, index) => {
+    return items.map((item) => {
       return (
         <>
-          <CardContent key={index}>
+          <CardContent key={item.id}>
             <ContentTitle>{item.title}</ContentTitle>
             <ContentPrice>{item.price}</ContentPrice>
           </CardContent>

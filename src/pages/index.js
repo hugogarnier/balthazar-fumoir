@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import { Router } from '@reach/router';
 
 import '../styles/index.css';
@@ -7,15 +8,13 @@ import Hero from '../components/hero';
 import Origins from '../components/origins';
 import Restaurant from './restaurant';
 import Products from './products';
-import Contact from './contact';
 
 const IndexPage = () => {
   return (
     <Layout>
       <Router basepath='/app'>
         <Products path='/products' />
-        <Restaurant path='/restaurant' />
-        <Contact path='/contact' />
+        <Restaurant path='/menufumoir' />
       </Router>
       <Hero />
       <Origins />

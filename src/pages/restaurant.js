@@ -40,9 +40,25 @@ const Restaurant = () => {
               animate={{ x: 0, opacity: 1 }}
               transition={{ ease: 'easeOut', duration: 1, delay: 0.4 }}
             >
+              <span>
+                Nous vous proposons toute la journée des boissons et une gamme
+                de produits de la mer et de la terre fait Maison :
+              </span>
+              <ul>
+                <li>Saumon fumé</li>
+                <li>Truite de mer au curry vert</li>
+                <li>Bulots mayonnaise</li>
+                <li>Crevettes marinées aux épices Mapuche</li>
+                <li>Assiette de cochonaille</li>
+              </ul>
               <p>
-                Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus
-                scelerra risus, sagittis. Venenatis ridiculus Pella nulla. S
+                Et pour terminer votre repas: une mousse chocolat à la fève
+                tonka sans sucre, un généreux far breton ou le dessert du moment
+              </p>
+              <p>
+                En accompagnement de vos plats, en plus de cidre et de bières
+                bretonne, vous trouverez une sélection de vin de nos régions
+                servie au verre ou à la carafe.
               </p>
               <ButtonMenu href='#menu' onClick={handleClick}>
                 Voir le menu
@@ -89,7 +105,7 @@ const RestaurantContent = styled.div`
   padding-left: 3rem;
   @media screen and (max-width: 768px) {
     text-align: center;
-    padding: 2rem 9rem;
+    padding: 2rem 3rem;
     font-size: 3rem;
   }
 `;
@@ -98,13 +114,16 @@ const RestaurantTitle = styled(motion.h3)`
   padding-bottom: 2rem;
   font-size: 2rem;
   z-index: 100;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const RestaurantText = styled(motion.div)`
   font-size: 1rem;
-
   > p {
-    margin-bottom: 4rem;
+    margin: 2rem 0;
   }
 
   > a {
@@ -116,11 +135,28 @@ const RestaurantText = styled(motion.div)`
     &:hover {
       background: var(--clr-primary);
     }
+
+    @media screen and (max-width: 768px) {
+      padding: 0.5rem 1rem;
+    }
   }
 
-  @media screen and (max-width: 768px) {
-    > a {
-      padding: 0.5rem 1rem;
+  > ul {
+    padding: 1rem 0;
+    list-style: inside;
+
+    @media screen and (max-width: 768px) {
+      list-style: none;
+    }
+  }
+
+  > ul > li {
+    padding-left: 1rem;
+    font-size: 0.9rem;
+
+    @media screen and (max-width: 768px) {
+      padding-left: 0;
+      padding-bottom: 0.5rem;
     }
   }
 `;
@@ -143,7 +179,7 @@ const ButtonMenu = styled.a`
 `;
 
 const RestaurantImage = styled(motion.img)`
-  width: 35vw;
+  width: 30vw;
   height: auto;
 `;
 

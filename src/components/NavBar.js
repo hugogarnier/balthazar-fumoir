@@ -31,7 +31,7 @@ const Navbar = () => {
           </NavLink>
         </NavItems>
         <NavItems open={isOpen}>
-          <NavLink to='/restaurant' onClick={OpenBurger}>
+          <NavLink to='/menufumoir' onClick={OpenBurger}>
             Restaurant
           </NavLink>
         </NavItems>

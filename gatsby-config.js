@@ -32,7 +32,16 @@ module.exports = {
         path: `${__dirname}/src/data/`,
       },
     },
-    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Balthazar Fumoir',
+        short_name: 'Balthazar',
+        start_url: '/',
+        display: 'standalone',
+        icon: 'src/images/favicon-16x16.png',
+      },
+    }`gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     'gatsby-plugin-robots-txt',
     'gatsby-transformer-json',

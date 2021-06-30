@@ -9,6 +9,6 @@ export const navigation = [
   },
   {
     name: 'Restaurant',
-    href: '/restaurant',
+    href: '/menufumoir',
   },
 ];

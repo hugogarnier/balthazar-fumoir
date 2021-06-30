@@ -14,7 +14,7 @@ const IndexPage = () => {
     <Layout>
       <Router basepath='/app'>
         <Products path='/products' />
-        <Restaurant path='/restaurant' />
+        <Restaurant path='/menufumoir' />
       </Router>
       <Hero />
       <Origins />

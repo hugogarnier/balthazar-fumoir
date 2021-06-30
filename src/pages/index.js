@@ -6,7 +6,7 @@ import '../styles/index.css';
 import Layout from '../components/layout';
 import Hero from '../components/hero';
 import Origins from '../components/origins';
-import Restaurant from './restaurant';
+import MenuFumoir from './menufumoir';
 import Products from './products';
 
 const IndexPage = () => {
@@ -14,7 +14,7 @@ const IndexPage = () => {
     <Layout>
       <Router basepath='/app'>
         <Products path='/products' />
-        <Restaurant path='/menufumoir' />
+        <MenuFumoir path='/menufumoir' />
       </Router>
       <Hero />
       <Origins />

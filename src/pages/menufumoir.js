@@ -7,7 +7,7 @@ import chef from '../images/chef_fumoir.svg';
 import carte from '../images/carte.pdf';
 import MenuWithCard from '../components/Menu/MenuWithCard';
 
-const Restaurant = () => {
+const MenuFumoir = () => {
   const handleClick = (event) => {
     event.preventDefault();
     document
@@ -198,4 +198,4 @@ const MenuContainer = styled.div`
   }
 `;
 
-export default Restaurant;
+export default MenuFumoir;

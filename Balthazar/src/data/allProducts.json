@@ -1,0 +1,240 @@
+{
+  "products": {
+    "name": "test",
+    "items": [
+      {
+        "id": 1,
+        "title": "2 Tranches de saumon fumé",
+        "price": "5,50€",
+        "image": "../images/products/saumon1.jpg",
+        "description": "Saumon écossais label rouge salé au sel de Guérande et fumé au bois de hêtre",
+        "type": "poisson"
+      },
+      {
+        "id": 2,
+        "title": "Pavé de Truite de mer fumé aux algues",
+        "price": "6,20€",
+        "image": "../images/products/truite_algue.jpg",
+        "description": "Truite de mer salée au sel de Guérande marinée aux algues et fumée au bois de hêtre",
+        "type": "poisson"
+      },
+      {
+        "id": 3,
+        "title": "Pavé de Truite de mer fumé au curry vert",
+        "price": "6,20€",
+        "image": "../images/products/truite_curry.jpg",
+        "description": "Truite de mer salée au sel de Guérande assaisonnée au curry vert et fumée au bois de hêtre",
+        "type": "poisson"
+      },
+      {
+        "id": 4,
+        "title": "Filet de porc breton fumé et séché",
+        "price": "4,30€",
+        "image": "../images/products/filetporc.jpg",
+        "description": "Filet de porc salé au sel de Guérande et fumé au bois de hêtre, séché plusieurs semaines",
+        "type": "viande"
+      },
+      {
+        "id": 5,
+        "title": "Magret de canard",
+        "price": "4,50€",
+        "image": "../images/products/magret.jpg",
+        "description": "Magret de canard salé au sel de Guérande et fumé au bois de hêtre",
+        "type": "viande"
+      },
+      {
+        "id": 6,
+        "title": "Terrine 100 % pur porc au poivre vert",
+        "price": "5,60€",
+        "image": "../images/products/terrine.jpg",
+        "description": "Terrine maison réalisée avec 100 % viande de porc Bretonne",
+        "type": "bocal"
+      },
+      {
+        "id": 7,
+        "title": "Plateau de charcuterie",
+        "price": "5,50€",
+        "image": "../images/products/plateaucharcuterie.jpg",
+        "description": "",
+        "type": "viande"
+      },
+      {
+        "id": 8,
+        "title": "Confiture Fraise au basilic frais",
+        "price": "6,90€",
+        "image": "../images/products/conf_fraise.jpg",
+        "description": "",
+        "type": "bocal"
+      },
+      {
+        "id": 9,
+        "title": "Confiture ananas gingembre",
+        "price": "6,90€",
+        "image": "../images/products/conf_ananas.jpg",
+        "description": "",
+        "type": "bocal"
+      },
+      {
+        "id": 10,
+        "title": "Confiture framboise à la fève tonka",
+        "price": "6,90€",
+        "image": "../images/products/conf_framboise.jpg",
+        "description": "",
+        "type": "bocal"
+      },
+      {
+        "id": 11,
+        "title": "Sauce caramel au beurre salé",
+        "price": "5,50€",
+        "image": "../images/products/sauce_cara.jpg",
+        "description": "",
+        "type": "bocal"
+      },
+      {
+        "id": 12,
+        "title": "Caramel au beurre salé",
+        "price": "5€",
+        "image": "../images/products/caramel.jpg",
+        "description": "",
+        "type": "bocal"
+      },
+      {
+        "id": 13,
+        "title": "Caramel au beurre salé et chocolat noir",
+        "price": "5,50€",
+        "image": "../images/products/cara_choco.jpg",
+        "description": "",
+        "type": "bocal"
+      },
+      {
+        "id": 131,
+        "title": "Bocaux plats cuisinés",
+        "price": "8,55€",
+        "image": "../images/products/bocaux_cuisines.jpg",
+        "description": "",
+        "type": "bocal"
+      },
+
+      {
+        "id": 14,
+        "title": "Sel à l'ail des ours",
+        "price": "8,40€",
+        "image": "../images/products/ail_ours.jpg",
+        "description": "",
+        "type": "epice"
+      },
+      {
+        "id": 15,
+        "title": "Mélange cajun",
+        "price": "8,40€",
+        "image": "../images/products/cajun.jpg",
+        "description": "",
+        "type": "epice"
+      },
+      {
+        "id": 16,
+        "title": "Curry vert",
+        "price": "8,40€",
+        "image": "../images/products/curry_vert.jpg",
+        "description": "",
+        "type": "epice"
+      },
+      {
+        "id": 17,
+        "title": "Fève tonka",
+        "price": "8,40€",
+        "image": "../images/products/feve_tonka.jpg",
+        "description": "",
+        "type": "epice"
+      },
+      {
+        "id": 18,
+        "title": "Epices des indiens Mapuche",
+        "price": "8,40€",
+        "image": "../images/products/mapuche.jpg",
+        "description": "",
+        "type": "epice"
+      },
+      {
+        "id": 19,
+        "title": "Piment basque",
+        "price": "8,40€",
+        "image": "../images/products/pim_basque.jpg",
+        "description": "",
+        "type": "epice"
+      },
+      {
+        "id": 20,
+        "title": "Poivre à huitres",
+        "price": "8,40€",
+        "image": "../images/products/poivre_huitre.jpg",
+        "description": "",
+        "type": "epice"
+      },
+      {
+        "id": 21,
+        "title": "Jésus du Pays Basque",
+        "price": "21,50€",
+        "image": "../images/products/jesus.jpg",
+        "description": "",
+        "type": "viande"
+      },
+      {
+        "id": 22,
+        "title": "Saucisse sèche",
+        "price": "7,80€",
+        "image": "../images/products/sau_seche.jpg",
+        "description": "",
+        "type": "viande"
+      },
+      {
+        "id": 23,
+        "title": "Saucisson sec des Aldudes",
+        "price": "12,30€",
+        "image": "../images/products/sau_sec.jpg",
+        "description": "",
+        "type": "viande"
+      },
+      {
+        "id": 24,
+        "title": "Cidre artisanal - Bouteille consignée",
+        "price": "4,90€",
+        "image": "../images/products/cidre.jpg",
+        "description": "",
+        "type": "boisson"
+      },
+      {
+        "id": 25,
+        "title": "Jus de pomme BIO - Bouteille consignée",
+        "price": "4,90€",
+        "image": "../images/products/jus_pomme.jpg",
+        "description": "",
+        "type": "boisson"
+      },
+      {
+        "id": 26,
+        "title": "Pétillant aux pommes sans alcool - Bouteille consignée",
+        "price": "4,90€",
+        "image": "../images/products/petillant_pomme.jpg",
+        "description": "",
+        "type": "boisson"
+      },
+      {
+        "id": 27,
+        "title": "Bière Uncle Blanche IPA",
+        "price": "6,90€",
+        "image": "../images/products/uncle_blanche.jpg",
+        "description": "",
+        "type": "boisson"
+      },
+      {
+        "id": 28,
+        "title": "Bière de blé Uncle",
+        "price": "6,90€",
+        "image": "../images/products/uncle_ble.jpg",
+        "description": "",
+        "type": "boisson"
+      }
+    ]
+  }
+}
